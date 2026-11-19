@@ -559,7 +559,7 @@ LOGIN = """{% extends "base.html" %}{% block content %}
 <div class="hint">Demo account is pre-filled: demo@foodies.pk / demo123</div></div></div>{% endblock %}"""
 
 RESTAURANTS_PAGE = """{% extends "base.html" %}{% block content %}
-<h1>Restaurants near you</h1><p class="muted">Choose a restaurant to see its menu.</p>
+<h1>Hungry? Restaurants near you</h1><p class="muted">Choose a restaurant to see its menu.</p>
 <form method="get" class="row" style="margin-top:12px;max-width:480px"><input type="text" name="q" value="{{ term }}" placeholder="Search by name or cuisine" aria-label="Search">
 <button class="btn" type="submit">Search</button></form>
 <div class="grid">{% for r in restaurants %}<a class="card rest" href="/restaurant/{{ r.id }}">
